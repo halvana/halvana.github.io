@@ -1,101 +1,68 @@
 #
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+# Halvana Tech Site Content
 #
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
 
-# English (default)
-# -----------------
 en: &DEFAULT_EN
   header:
     title: Vision made easier
     text: Smart TV, Display, Digital KIOSK
-    button: Tell Me More
-    buttonlink: "#services"
-
-  services:
-    title: "Services"
-    text: "Lorem ipsum"
-    section: services
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
-    closebutton: "Close Project"
-
-  timeline:
-    title: "Timeline"
-    text: "Lorem ipsum timeline"
-    section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
+    button: Discuss Your Project
+    buttonlink: "#contact"
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "About Halvana Tech"
+    text: "Engineering Expertise. Focused Execution."
+    body: "Established in 2025, Halvana Tech is a project-based engineering services company focused on **Smart TVs**, **Display Boards**, and **Interactive Kiosks**.<br><br>Our foundation comes from approximately **nine years of professional industry experience** across multimedia platforms, AOSP, Android systems, and embedded engineering.<br><br>We work with product manufacturers and technology teams to address software, hardware integration, interoperability, validation, and product-level engineering challenges.<br><br>Our approach is simple: **stay focused on the problem, communicate with clarity, and take ownership of the engineering work**."
     section: about
 
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
+  services:
+    title: "Our Services"
+    text: "Three focused engineering pillars for connected display and embedded products."
+    section: services
     list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+      - title: "Software Engineering (SW)"
+        desc: "Embedded software, operating systems, multimedia, and connectivity. Capabilities include AOSP and Android TV platform development, embedded Linux, HAL and device drivers, HDMI-CEC implementation, ARC/eARC integration, Wi-Fi/Bluetooth, media streaming (HLS, MPEG-DASH, RTSP), and OTA update mechanisms."
+        icon: fas fa-laptop-code
+      - title: "Hardware Engineering (HW)"
+        desc: "Product-level hardware integration and hardware-software interoperability. Capabilities include HDMI interface integration, display panel bring-up, wireless module integration, USB, UART, I2C, SPI interfaces, touchscreen integration, kiosk peripheral interfacing, and board-level troubleshooting."
+        icon: fas fa-microchip
+      - title: "Compliance, Testing & Support (CTS)"
+        desc: "Engineering validation, interoperability testing, and continuous technical support. Capabilities include HDMI functionality and CEC command validation, ARC/eARC audio testing, wireless connectivity validation, audio/video playback testing, functional and regression testing, and root-cause defect analysis."
+        icon: fas fa-clipboard-check
+
+  portfolio:
+    title: "Products We Support"
+    text: "Specialised engineering expertise across three core connected product categories."
+    section: portfolio
+    closebutton: "Close Details"
+
+  timeline:
+    title: "Our Engineering Approach"
+    text: "A structured, four-stage execution process built on Focus, Clarity, and Ownership."
+    section: approach
+    events:
+      - title: "Understand"
+        year: "01"
+        desc: "Analyze product requirements, target hardware architectures, protocol specifications, and core engineering challenges."
+        image: assets/img/timeline/1.jpg
+      - title: "Define"
+        year: "02"
+        desc: "Establish clear technical scope, identify dependencies, clarify deliverables, and define the technical approach."
+        image: assets/img/timeline/2.jpg
+      - title: "Engineer"
+        year: "03"
+        desc: "Execute embedded development, hardware integration, protocol implementation, and low-level system debugging."
+        image: assets/img/timeline/3.jpg
+      - title: "Validate & Deliver"
+        year: "04"
+        desc: "Perform comprehensive interoperability testing, resolve technical issues, document outcomes, and deliver production-ready code."
+        image: assets/img/timeline/4.jpg
+    end: "FOCUS.<br>CLARITY.<br>OWNERSHIP."
 
   team:
-    title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    title: "Our Leadership Team"
+    text: "Hands-on engineering leadership with direct technical ownership."
+    subtext: "Built on approximately nine years of professional industry experience across multimedia, AOSP, and embedded systems."
     section: team
     people:
       - name: "Salma Kunjubeeran"
@@ -109,33 +76,26 @@ en: &DEFAULT_EN
         image: assets/img/team/sachin.jpg
 
   contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    title: "Let's Engineer Your Next Product Together"
+    text: "Have an engineering challenge involving a Smart TV, Display Board or Interactive Kiosk? Let's discuss your requirements."
     section: contact
-    name: "Name*"
+    name: "Your Name*"
     name-validation: "Please enter your name."
-    email: "Email*"
-    email-validation: "Please enter your email address."
+    email: "Business Email*"
+    email-validation: "Please enter your business email."
     phone: "Phone Number"
     phone-validation: "Please enter your phone number."
-    message: "Message*"
-    message-validation: "Please enter a message."
-    subject: "Contact Form Submission"
-    submit: "Send Message"
+    message: "Project Details (Product Category, Scope, Timeline)*"
+    message-validation: "Please provide details about your project."
+    subject: "Halvana Tech Project Inquiry"
+    submit: "Discuss Your Project"
 
   footer:
-    legal: "Privacy Policy"
+    legal: "Halvana Tech &bull; Established 2025"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
+      - url: "https://www.linkedin.com/in/salma-kunjubeeran-60353b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSEKfckwNSDCTl%2BHDq%2B8X6g%3D%3D"
         icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -144,137 +104,3 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
-# Spanish
-# -------
-es: &DEFAULT_ES
-  header:
-    title: ¡Bienvenido a nuestro Estudio!
-    text: Es un placer conocerle
-    button: Ver más
-    buttonlink: "#servicios"
-
-  services:
-    title: "Servicios"
-    text: "Lorem ipsum"
-    section: servicios
-    list:
-      - title: "Comercio Electrónico"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Diseño Responsivo"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Su descripción aquí, soporte completo de **Markdown**"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portafolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portafolio
-    closebutton: "Cerrar Proyecto"
-
-  timeline:
-    title: "Cronología"
-    text: "Lorem ipsum timeline"
-    section: cronologia
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Nuestro Humilde Comienzo"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Una Agencia nace"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "La plantilla Jekyll es creada"
-        year: "2019"
-        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Título"
-        year: "2009-2011"
-        desc: "Su descripción aquí, **Markdown** es soportado completamente."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "¡Se parte <br> de Nuestra <br> Historia!"
-
-  about:
-    title: "Sobre nosotros"
-    text: "nuestra historia"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: nosotros
-
-  clients:
-    section: clientes
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "NUESTRO INCREÍBLE EQUIPO"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: equipo
-    people:
-      - name: "Salma Kunjubeeran"
-        role: "Lead Technical"
-        image: assets/img/team/salma.jpg
-        social:
-          - url: "https://www.linkedin.com/in/salma-kunjubeeran-60353b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSEKfckwNSDCTl%2BHDq%2B8X6g%3D%3D"
-            icon: fab fa-linkedin-in
-      - name: "Sachin"
-        role: "Lead Executive"
-        image: assets/img/team/sachin.jpg
-
-  contact:
-    title: "Contáctenos"
-    text: "Lorem ipsum or call 123456789"
-    section: contacto
-    name: "Nombre*"
-    name-validation: "Por favor ingrese su nombre."
-    email: "Correo Electrónico*"
-    email-validation: "Por favor ingrese su correo electrónico."
-    phone: "Número Telefónico*"
-    phone-validation: "Por favor ingrese su número telefónico."
-    message: "Mensaje*"
-    message-validation: "Por favor escriba un mensaje."
-    subject: "Envío del formulario de contacto"
-    submit: "Enviar Mensaje"
-
-  footer:
-    legal: "Política de Privacidad"
-    social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES

@@ -1,0 +1,48 @@
+<!-- About -->
+<section class="page-section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].about.title | default: "About Halvana Tech" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].about.text | default: "Engineering Expertise. Focused Execution." }}</h3>
+      </div>
+    </div>
+    
+    <div class="row mb-5">
+      <div class="col-lg-9 mx-auto text-center">
+        <div class="lead text-muted" style="font-size: 1.15rem; line-height: 1.85;">
+          {{ site.data.sitetext[site.locale].about.body | markdownify }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Philosophy Cards -->
+    <div class="row text-center mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="p-4 h-100 shadow-sm" style="border-radius: 8px; border-top: 4px solid #fed136; background: #fff;">
+          <h4 class="font-weight-bold text-uppercase mb-2">Focus</h4>
+          <p class="text-muted small mb-0" style="line-height: 1.7;">
+            We concentrate on a defined set of connected display products: Smart TVs, Display Boards, and Interactive Kiosks. Specialised engineering rather than spread across unrelated domains.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 h-100 shadow-sm" style="border-radius: 8px; border-top: 4px solid #fed136; background: #fff;">
+          <h4 class="font-weight-bold text-uppercase mb-2">Clarity</h4>
+          <p class="text-muted small mb-0" style="line-height: 1.7;">
+            Clear requirements, transparent technical discussions, realistic commitments, and straightforward communication throughout the product engineering lifecycle.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 h-100 shadow-sm" style="border-radius: 8px; border-top: 4px solid #fed136; background: #fff;">
+          <h4 class="font-weight-bold text-uppercase mb-2">Ownership</h4>
+          <p class="text-muted small mb-0" style="line-height: 1.7;">
+            Direct responsibility for assigned engineering deliverables, low-level problem solving, hardware bring-up, validation, and reliable delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About -->
