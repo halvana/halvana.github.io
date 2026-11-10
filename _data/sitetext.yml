@@ -12,7 +12,7 @@ en: &DEFAULT_EN
   about:
     title: "About Halvana Tech"
     text: "Engineering Expertise. Focused Execution."
-    body: "Established in 2025, Halvana Tech is a project-based engineering services company focused on **Smart TVs**, **Display Boards**, and **Interactive Kiosks**.<br><br>Our foundation comes from approximately **nine years of professional industry experience** across multimedia platforms, AOSP, Android systems, and embedded engineering.<br><br>We work with product manufacturers and technology teams to address software, hardware integration, interoperability, validation, and product-level engineering challenges.<br><br>Our approach is simple: **stay focused on the problem, communicate with clarity, and take ownership of the engineering work**."
+    body: "Established in 2025, Halvana Tech is a project-based engineering services company focused on **Smart TVs**, **Display Boards**, and **Interactive Kiosks**.<br><br>Our foundation comes from approximately **nine years of professional industry experience** across multimedia platforms, AOSP, Android systems, and embedded engineering.<br><br>We work with product manufacturers and technology teams to address software, hardware integration, interoperability, validation, and product-level engineering challenges.<br><br>Our approach is simple: **stay focused on the problem, communicate with clarity, and take ownership of the engineering work**. We support direct B2B client agreements and setup **Upwork Direct Contracts** wherever necessary for client convenience and procurement compliance."
     section: about
 
   services:
