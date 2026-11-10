@@ -15,7 +15,7 @@
   {% endif %}
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.author }}">
   
@@ -40,8 +40,20 @@
   <!-- Custom styles for this theme -->
   <link href="assets/css/agency.css" rel="stylesheet" />
 
-  <!-- Halvana Custom Styling Overrides -->
+  <!-- Halvana Custom Responsive Styling -->
   <style>
+    /* Reset & Prevent horizontal overflow on mobile devices */
+    html, body {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      -webkit-font-smoothing: antialiased;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       color: #333f48;
@@ -50,7 +62,28 @@
       font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       letter-spacing: -0.2px;
     }
+
+    /* Navbar styling */
+    #mainNav {
+      background-color: #101a2b !important;
+      transition: all 0.3s ease;
+    }
+    #mainNav .navbar-brand {
+      color: #ffffff;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+    }
+    #mainNav .navbar-toggler {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 12px;
+      font-size: 0.85rem;
+      border-radius: 4px;
+    }
+
+    /* Masthead Hero Section */
     header.masthead {
+      position: relative;
       background-color: #101a2b !important;
       background-image: linear-gradient(rgba(16, 26, 43, 0.90), rgba(16, 26, 43, 0.94)), url('assets/img/header-bg.jpg') !important;
       background-size: cover !important;
@@ -58,8 +91,28 @@
       padding-top: 170px !important;
       padding-bottom: 120px !important;
     }
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 18px;
+      background: rgba(254, 209, 54, 0.15);
+      border: 1px solid #fed136;
+      border-radius: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      color: #fed136;
+      text-transform: uppercase;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    /* Section Spacing */
     .page-section {
-      padding: 90px 0;
+      padding: 85px 0;
     }
     .section-heading {
       font-weight: 800;
@@ -69,8 +122,10 @@
     .section-subheading {
       font-size: 1.15rem;
       font-weight: 400;
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
+
+    /* Interactive Elements & Cards */
     .card {
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
@@ -85,12 +140,41 @@
       transform: translateY(-4px);
     }
     .portfolio-caption {
-      padding: 24px 20px;
+      padding: 22px 20px;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     }
+
+    /* Team Member images */
+    .team-member img {
+      width: 225px;
+      height: 225px;
+      object-fit: cover;
+      object-position: center top;
+      border: 7px solid rgba(0, 0, 0, 0.08);
+    }
+
+    /* Timeline Section for Desktop (>= 768px) */
+    @media (min-width: 768px) {
+      .timeline > li .timeline-panel {
+        padding: 20px 25px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      .timeline > li.timeline-inverted > .timeline-panel {
+        padding: 20px 25px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    /* Contact Section */
     #contact {
       background-color: #101a2b !important;
       background-image: linear-gradient(rgba(16, 26, 43, 0.95), rgba(16, 26, 43, 0.97)), url('assets/img/map-image.png') !important;
+      background-size: cover !important;
+      background-position: center !important;
     }
     #contact .form-control {
       border: 1px solid rgba(255, 255, 255, 0.2);
@@ -103,11 +187,135 @@
       border-color: #fed136;
       box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
     }
-    .timeline > li .timeline-panel {
-      padding: 20px 25px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    /* ========================================================
+       Mobile Responsiveness Tweaks (max-width: 767.98px)
+       ======================================================== */
+    @media (max-width: 767.98px) {
+      #mainNav .navbar-collapse {
+        background-color: #101a2b;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-top: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 10px 0;
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      header.masthead {
+        padding-top: 120px !important;
+        padding-bottom: 60px !important;
+      }
+      header.masthead .intro-text .intro-heading {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 15px !important;
+        word-wrap: break-word;
+        word-break: normal;
+      }
+      header.masthead .intro-text .intro-lead-in {
+        font-size: 1.05rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+      }
+      header.masthead .intro-text p {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 25px !important;
+      }
+      .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+      .hero-ctas .btn {
+        width: 100% !important;
+        padding: 14px 20px !important;
+        font-size: 0.92rem !important;
+      }
+      .page-section {
+        padding: 55px 0 !important;
+      }
+      .section-heading {
+        font-size: 1.7rem !important;
+      }
+      .section-subheading {
+        font-size: 0.95rem !important;
+        margin-bottom: 35px !important;
+      }
+      
+      /* Mobile Timeline Fix */
+      .timeline:before {
+        left: 35px !important;
+      }
+      .timeline > li {
+        min-height: 60px !important;
+        margin-bottom: 30px !important;
+      }
+      .timeline > li .timeline-image {
+        left: 0 !important;
+        width: 70px !important;
+        height: 70px !important;
+        border-width: 4px !important;
+      }
+      .timeline > li .timeline-image h4 {
+        font-size: 1.15rem !important;
+        margin: 0 !important;
+      }
+      .timeline > li.timeline-inverted .timeline-image h4 {
+        font-size: 0.65rem !important;
+        line-height: 1.2 !important;
+      }
+      .timeline > li .timeline-panel,
+      .timeline > li.timeline-inverted > .timeline-panel {
+        float: none !important;
+        width: 100% !important;
+        padding: 0 0 0 85px !important;
+        text-align: left !important;
+      }
+      .timeline > li .timeline-panel .timeline-heading .subheading {
+        font-size: 1.1rem !important;
+      }
+      .timeline > li .timeline-panel .timeline-body {
+        background: #ffffff;
+        padding: 14px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-top: 8px;
+        font-size: 0.9rem;
+      }
+
+      /* Mobile Team Member sizing */
+      .team-member img {
+        width: 180px !important;
+        height: 180px !important;
+      }
+      
+      /* Mobile Form Elements */
+      #contact .form-group textarea {
+        min-height: 150px !important;
+      }
+      #sendMessageButton {
+        width: 100%;
+        padding: 15px 20px !important;
+        font-size: 1rem !important;
+      }
+    }
+
+    @media (max-width: 400px) {
+      header.masthead .intro-text .intro-heading {
+        font-size: 1.6rem !important;
+      }
+      .hero-badge {
+        font-size: 0.72rem !important;
+        letter-spacing: 1px !important;
+        padding: 4px 12px !important;
+      }
+      #mainNav .navbar-brand {
+        font-size: 1.05rem !important;
+      }
     }
   </style>
 </head>

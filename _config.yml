@@ -18,7 +18,7 @@ url    : "https://www.halvanatech.com" # the base hostname & protocol for your s
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Halvana Tech | Smart TV, Display & Kiosk Engineering
-email      : admin@halvanatech.com
+email      : contact@halvanatech.com
 description: "Halvana Tech provides software engineering, hardware integration, and compliance, testing and support services for Smart TVs, Display Boards and Interactive Kiosks. Built on nine years of industry experience."
 author     : Halvana Tech
 # logo:     #optional, defaults to site title
