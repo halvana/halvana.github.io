@@ -67,10 +67,10 @@ en: &DEFAULT_EN
     people:
       - name: "Sachin"
         role: "Lead Executive"
-        image: assets/img/team/sachin.jpg
+        image: assets/img/team/Sachin.png
       - name: "Salma Kunjubeeran"
         role: "Lead Technical"
-        image: assets/img/team/salma.jpg
+        image: assets/img/team/Kunjubeeran.png
         social:
           - url: "https://www.linkedin.com/in/salma-kunjubeeran-60353b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSEKfckwNSDCTl%2BHDq%2B8X6g%3D%3D"
             icon: fab fa-linkedin-in
